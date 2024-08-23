@@ -34,8 +34,8 @@ if (sumad1>9){
 sumad1-=10;
 }
 
-// contexto: los resultados estan en 8 bits y tengo que empaquetarlos. desplazo la suma uno hacia la posicion mas significativa
-// con un shift hacia la izquierda 4 lugares <<. luego un or bit a bit para la suma dos.
+// contexto: los resultados estan en 8 bits y tengo que empaquetarlos en 16 bits. desplazo la sumauno hacia la posicion mas significativa
+// con un shift hacia la izquierda 4 lugares <<. luego un or bit a bit para la sumados.
 
 short resultado = ((sumad1<<4)| sumad2);
 
